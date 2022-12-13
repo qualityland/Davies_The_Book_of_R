@@ -1,6 +1,4 @@
-options(prompt="R> ")
-
-
+options(prompt = "R> ")
 
 
 #################
@@ -13,37 +11,37 @@ options(prompt="R> ")
 
 ##  2.1.1 ##
 
-2+3
-14/6
-14/6+5
-14/(6+5)
-3^2
-2^3
+2 + 3
+14 / 6
+14 / 6 + 5
+14 / (6 + 5)
+3 ^ 2
+2 ^ 3
 
 #
 
-sqrt(x=9)
-sqrt(x=5.311)
+sqrt(x = 9)
+sqrt(x = 5.311)
 
 #
 
-10^2+3*60/8-3
-5^3*(6-2)/(61-3+4)
-2^(2+1)-4+64^((-2)^(2.25-1/4))
-(0.44*(1-0.44)/34)^0.5
+10 ^ 2 + 3 * 60 / 8 - 3
+5 ^ 3 * (6 - 2) / (61 - 3 + 4)
+2 ^ (2 + 1) - 4 + 64 ^ ((-2) ^ (2.25 - 1 / 4))
+(0.44 * (1 - 0.44) / 34) ^ 0.5
 
 
 ## 2.1.2 ##
 
-log(x=243,base=3)
+log(x = 243, base = 3)
 
 #
 
-exp(x=3)
+exp(x = 3)
 
 #
 
-log(x=20.08554)
+log(x = 20.08554)
 
 
 ## 2.1.3 ##
@@ -64,9 +62,8 @@ x
 
 mynumber = 45.2
 
-y <- mynumber*x
+y <- mynumber * x
 y
-
 ls()
 
 
@@ -77,18 +74,18 @@ ls()
 
 ## 2.3.1 ##
 
-myvec <- c(1,3,1,42)
+myvec <- c(1, 3, 1, 42)
 myvec
 
 #
 
 foo <- 32.1
-myvec2 <- c(3,-3,2,3.45,1e+03,64^0.5,2+(3-1.1)/9.44,foo)
+myvec2 <- c(3, -3, 2, 3.45, 1e+03, 64 ^ 0.5, 2 + (3 - 1.1) / 9.44, foo)
 myvec2
 
 #
 
-myvec3 <- c(myvec,myvec2)
+myvec3 <- c(myvec, myvec2)
 myvec3
 
 
@@ -99,61 +96,61 @@ myvec3
 #
 
 foo <- 5.3
-bar <- foo:(-47+1.5)
+bar <- foo:(-47 + 1.5)
 bar
 
 #
 
-seq(from=3,to=27,by=3)
+seq(from = 3, to = 27, by = 3)
 
 #
 
-seq(from=3,to=27,length.out=40)
+seq(from = 3, to = 27, length.out = 40)
 
 #
 
 foo <- 5.3
-myseq <- seq(from=foo,to=(-47+1.5),by=-2.4)
+myseq <- seq(from = foo, to = (-47 + 1.5), by = -2.4)
 myseq
 
 #
 
-myseq2 <- seq(from=foo,to=(-47+1.5),length.out=5)
+myseq2 <- seq(from = foo, to = (-47 + 1.5), length.out = 5)
 myseq2
 
 #
 
-rep(x=1,times=4)
-rep(x=c(3,62,8.3),times=3)
-rep(x=c(3,62,8.3),each=2)
-rep(x=c(3,62,8.3),times=3,each=2)
+rep(x = 1, times = 4)
+rep(x = c(3, 62, 8.3), times = 3)
+rep(x = c(3, 62, 8.3), each = 2)
+rep(x = c(3, 62, 8.3), times = 3, each = 2)
 
 #
 
 foo <- 4
-c(3,8.3,rep(x=32,times=foo),seq(from=-2,to=1,length.out=foo+1))
+c(3, 8.3, rep(x = 32, times = foo), seq(from = -2, to = 1, length.out = foo + 1))
 
 #
 
-sort(x=c(2.5,-1,-10,3.44),decreasing=FALSE)
+sort(x = c(2.5, -1, -10, 3.44), decreasing = FALSE)
 
-sort(x=c(2.5,-1,-10,3.44),decreasing=TRUE)
+sort(x = c(2.5, -1, -10, 3.44), decreasing = TRUE)
 
-foo <- seq(from=4.3,to=5.5,length.out=8)
+foo <- seq(from = 4.3, to = 5.5, length.out = 8)
 foo
-bar <- sort(x=foo,decreasing=TRUE)
+bar <- sort(x = foo, decreasing = TRUE)
 bar
 
-sort(x=c(foo,bar),decreasing=FALSE)
+sort(x = c(foo, bar), decreasing = FALSE)
 
 #
 
-length(x=c(3,2,8,1))
+length(x = c(3, 2, 8, 1))
 
-length(x=5:13)
+length(x = 5:13)
 
 foo <- 4
-bar <- c(3,8.3,rep(x=32,times=foo),seq(from=-2,to=1,length.out=foo+1))
+bar <- c(3, 8.3, rep(x = 32, times = foo), seq(from = -2, to = 1, length.out = foo + 1))
 length(x=bar)
 
 
@@ -1781,15 +1778,24 @@ ggsave(filename="/Users/tdavies/mypngqplot.png")
 # Section 8.4 #        ## You will need to change your 'file' directory appropriately to execute the following commands successfully ##
 ###############
 
-somelist <- list(foo=c(5,2,45),bar=matrix(data=c(T,T,F,F,F,F,T,F,T),nrow=3,ncol=3),baz=factor(c(1,2,2,3,1,1,3),levels=1:3,ordered=T))
+somelist <-
+  list(
+    foo = c(5, 2, 45),
+    bar = matrix(
+      data = c(T, T, F, F, F, F, T, F, T),
+      nrow = 3,
+      ncol = 3
+    ),
+    baz = factor(c(1, 2, 2, 3, 1, 1, 3), levels = 1:3, ordered = T)
+  )
 somelist
 
 #
 
-dput(x=somelist,file="/Users/tdavies/myRobject.txt")
+dput(x = somelist, file = "/Users/sschmidt/wrk/studio/davies/myRobject.txt")
 
 #
 
-newobject <- dget(file="/Users/tdavies/myRobject.txt")
+newobject <- dget(file = "/Users/sschmidt/wrk/studio/davies/myRobject.txt")
 newobject
 
