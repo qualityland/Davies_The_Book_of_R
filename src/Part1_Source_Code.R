@@ -118,7 +118,7 @@ myseq
 myseq2 <- seq(from = foo, to = (-47 + 1.5), length.out = 5)
 myseq2
 
-#
+# Repetition
 
 rep(x = 1, times = 4)
 rep(x = c(3, 62, 8.3), times = 3)

@@ -7,15 +7,15 @@
 ## 2.1 ##
 #########
 #(a)
-(6*2.3+42)/(3^(4.2-3.62))
+(6 * 2.3 + 42)/(3^(4.2-3.62))
 #(b)
 (-4)^2+2
 #(c)
-sqrt(x=0.5*((25.2+15+16.44+15.3+18.6)/5))
+sqrt(x = 0.5 * ((25.2 + 15 + 16.44 + 15.3 + 18.6) / 5))
 #(d)
-log(x=0.3)
+log(x = 0.3)
 #(e)
-exp(x=-1.203973)
+exp(x = -1.203973)
 #(f)
 -0.00000000423546322
 
@@ -23,29 +23,38 @@ exp(x=-1.203973)
 ## 2.2 ##
 #########
 #(a)
-foo <- 3^2*4^(1/8)
+foo <- 3 ^ 2 * 4 ^ (1 / 8)
 #(b)
-foo <- foo/2.33
+foo <- foo / 2.33
 foo
 #(c)
 bar <- -8.2e-13
 #(d)
-foo*bar
+foo * bar
 
 #########
 ## 2.3 ##
 #########
 #(a)
-foo <- seq(from=5,to=-11,by=-0.3)
+foo <- seq(from = 5, to = -11, by = -0.3)
 foo
 #(b)
-foo <- sort(x=foo,decreasing=FALSE)
+foo <- sort(x = foo, decreasing = FALSE)
 foo
 #(c)    
-bar <- rep(x=c(-1,3,-5,7,-9),times=2,each=10)
-sort(x=bar,decreasing=TRUE)
+bar <- rep(x = c(-1, 3, -5, 7, -9),
+           times = 2,
+           each = 10)
+sort(x = bar, decreasing = TRUE)
 #(d)
-baz <- c(6:12,rep(5.3,times=3),-3,seq(from=102,to=length(bar),length.out=9))
+baz <- c(
+  6:12,
+  rep(5.3, times = 3),
+  -3,
+  seq(from = 102,
+      to = length(bar),
+      length.out = 9)
+  )
 baz
 #(e)
 length(baz)
@@ -54,7 +63,7 @@ length(baz)
 ## 2.4 ##
 #########
 #(a)
-foo <- c(seq(from=3,to=6,length.out=5),rep(c(2,-5.1,-33),times=2),7/42+2)
+foo <- c(seq(from = 3, to = 6, length.out = 5), rep(c(2,-5.1,-33), times = 2), 7/42+2)
 foo
 #(b)
 bar <- foo[c(1,length(x=foo))]
